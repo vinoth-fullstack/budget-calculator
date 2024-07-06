@@ -1,0 +1,200 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  
+  margin-bottom: 20px;
+}
+
+.budget-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.budget-color, .remaining-budget, .spent {
+  flex: 1;
+  padding: 10px;
+  margin: 0 10px;
+  text-align: center;
+  border-radius: 5px;
+  
+}
+.remaining-budget,.spent{
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.around{
+ margin-top: 25px;
+}
+.add{
+  padding-top: 50px;
+}
+
+.budget-color {
+  background-color: #f1f1f1;
+
+}
+
+.remaining-budget {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.remaining-budget.over-budget {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.spent {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+.budget-info .btn {
+ 
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 50px;
+  height: 30px;
+  
+}
+
+.budget-info .btn:hover {
+  background-color: #0056b3;
+}
+
+
+.expenses .around {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c7c8ca;
+  
+  margin-bottom: 10px;
+  border-radius: 5px;
+  height: 35px;
+  padding: 10px;
+  
+}
+.expenses .soul {
+  flex: 1;
+}
+
+.expenses .cost {
+  color: #007bff;
+  font-weight: bold;
+}
+.expenses{
+  margin-top: 30px;
+}
+.close{
+  margin-left: 10px;
+}
+
+.expenses button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.expenses button:hover {
+  background-color: #c82333;
+}
+
+
+.add-expense {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-expense input {
+  flex: 1;
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+.adds-expense input{
+  
+ 
+    width: 100%;
+    margin-left: 0px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    max-width: 100%;
+    margin-right: 40px;
+}
+
+.add-expense button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.add-expense button:hover {
+  background-color: #218838;
+}
+
+
+@media (max-width: 768px) {
+  .budget-info {
+    flex-direction: column;
+    width: 100%;
+  }
+
+
+  .budget-color, .remaining-budget, .spent {
+    margin: 5px 0;
+    width: 100%;
+    font-size: larger;
+  }
+
+  .add-expense {
+    flex-direction: column;
+    
+  }
+
+  .add-expense input {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  
+
+  .expenses .cost, .expenses button {
+    margin-top: 10px;
+  }
+}
+.btn{
+  margin-left: 10px;
+}
+
